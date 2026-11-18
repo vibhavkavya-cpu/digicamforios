@@ -1,0 +1,29 @@
+name: DigiCam
+options:
+  bundleIdPrefix: com.yourname
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  DigiCam:
+    type: application
+    platform: iOS
+    sources:
+      - DigiCam
+    info:
+      path: DigiCam/Info.plist
+      properties:
+        CFBundleDisplayName: DigiCam
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSCameraUsageDescription: DigiCam needs the camera to take photos and videos.
+        NSMicrophoneUsageDescription: DigiCam needs the microphone to record video sound.
+        NSPhotoLibraryAddUsageDescription: DigiCam saves your photos and videos to your library.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourname.digicam
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
